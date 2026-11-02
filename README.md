@@ -1,54 +1,48 @@
-# deck_pokemon
+# Pokédex Clase · Deck de 40 cartas Pokémon
 
-This template should help get you started developing with Vue 3 in Vite.
+Aplicación hecha con Vue.js 3 que arma un deck de 40 cartas Pokémon aleatorias y las muestra todas en una sola vista.
 
-## Recommended IDE Setup
+Todos los datos son obtenidos mediante [PokeAPI](https://pokeapi.co/).
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Autor
 
-## Recommended Browser Setup
+- **Nombre:** Rodríguez Juárez José Daniel
+- **Número de control:** 22161222
+- **Institución:** Instituto Tecnológico de Oaxaca
+- **Materia:** Desarrollo de Servicios Web
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Características
 
-## Type Support for `.vue` Imports in TS
+- Deck de 40 Pokémon aleatorios y sin repetir.
+- Botón "Obtener nuevo mazo" para barajar otra vez.
+- Cada carta muestra:
+  - Nombre y HP (Puntos de Salud)
+  - ID de la Pokédex
+  - Tipo(s), con el color de fondo de la carta según el tipo principal
+  - Habilidades/ataques con su respectivo daño
+  - Franja de datos con altura y peso (en metros y kilogramos)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Tecnologías
 
-## Customize configuration
+- [Vue.js 3](https://vuejs.org/) con `<script setup>` y TypeScript
+- [Vite](https://vite.dev/)
+- [Vue Router](https://router.vuejs.org/)
+- [PokeAPI](https://pokeapi.co/)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Instalación y uso
 
-## Project Setup
+Requisitos: [Node.js](https://nodejs.org/) 22.18 o superior y conexión a internet (para consultar la PokeAPI).
 
-```sh
+1. Clonar el repositorio e instalar las dependencias:
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
+2. Iniciar el servidor de desarrollo:
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+3. Abrir en el navegador: [http://localhost:5173](http://localhost:5173)
 
-```sh
-npm run build
-```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
